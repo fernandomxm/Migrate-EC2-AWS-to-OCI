@@ -55,16 +55,16 @@ IMAGE10 <br>
 <br>
 Migrar instâncias e volumes está sujeito às estas outras limitações: <br>
 <br>
-Você não pode exportar uma VM se ela contiver software de terceiros fornecido pela AWS. Por exemplo, o VM Export não pode exportar instâncias do Windows ou SQL Server, ou qualquer instância criada a partir de uma imagem no AWS Marketplace. <br>
-Você deve exportar suas instâncias e volumes para um dos seguintes formatos de imagem que seu ambiente de virtualização suporta: <br>
+- Você não pode exportar uma VM se ela contiver software de terceiros fornecido pela AWS. Por exemplo, o VM Export não pode exportar instâncias do Windows ou SQL Server, ou qualquer instância criada a partir de uma imagem no AWS Marketplace. <br>
+- Você deve exportar suas instâncias e volumes para um dos seguintes formatos de imagem que seu ambiente de virtualização suporta: <br>
 Open Virtual Appliance (OVA) <br>
 Virtual Hard Disk (VHD) <br>
 Stream-optimized ESX Virtual Machine Disk (VMDK) <br>
-Você não pode exportar volumes de dados do Amazon EBS. <br>
-Você não pode exportar uma instância que tenha mais de um disco virtual. <br>
-Você não pode exportar uma instância que tenha mais de uma interface de rede. <br>
-Você não pode exportar uma instância do Amazon EC2 se você a compartilhou de outra conta da AWS. <br>
-Você não pode ter mais de cinco tarefas de exportação por região em andamento ao mesmo tempo. <br>
-VMs com volumes maiores que 1 TiB não são suportadas. <br>
-Você pode exportar um volume para um bucket S3 não criptografado ou para um bucket criptografado usando SSE-S3. <br>
+- Você não pode exportar volumes de dados do Amazon EBS. <br>
+- Você não pode exportar uma instância que tenha mais de um disco virtual. <br>
+- Você não pode exportar uma instância que tenha mais de uma interface de rede. <br>
+- Você não pode exportar uma instância do Amazon EC2 se você a compartilhou de outra conta da AWS. <br>
+- Você não pode ter mais de cinco tarefas de exportação por região em andamento ao mesmo tempo. <br>
+- VMs com volumes maiores que 1 TiB não são suportadas. <br>
+- Você pode exportar um volume para um bucket S3 não criptografado ou para um bucket criptografado usando SSE-S3. <br>
 Documentação oficial: https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport.html <br>
