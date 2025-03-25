@@ -5,7 +5,7 @@ Caso a instância que pretende migrar de AWS para OCI tiver o seu volume EBS cri
 Caso o volume EBS não seja criptografado, siga a partir do passo 4. <br>
 <br>
 <img src="https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/image01.png alt="Alt text">  <br>
-![IMAGE01]("https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/image01.png") <br>
+![IMAGE01](https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/image01.png) <br>
 IMAGE01  <br>
 <br>
 https://docs.aws.amazon.com/vm-import/latest/userguide/limits-image-export.html  <br>
