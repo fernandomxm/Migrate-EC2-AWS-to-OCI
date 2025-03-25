@@ -4,7 +4,7 @@ Migrate EC2 AWS to OCI <br>
 Caso a instância que pretende migrar de AWS para OCI tiver o seu volume EBS criptografado, siga a partir do passo 1. <br>
 Caso o volume EBS não seja criptografado, siga a partir do passo 4. <br>
 <br>
-<img src="https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/image01.png alt="Alt text">  <br
+<img src="https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/image01.png alt="Alt text">  <br>
 ![IMAGE01]("https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/image01.png") <br>
 IMAGE01  <br>
 <br>
