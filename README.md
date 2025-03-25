@@ -7,11 +7,12 @@ Caso o volume EBS não seja criptografado, siga a partir do passo 4. <br>
 ![IMAGE01](https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/image01.png) <br>
 <br>
 https://docs.aws.amazon.com/vm-import/latest/userguide/limits-image-export.html  <br>
- <br>
+<br>
 1) Retirar criptografia disco EBS:  <br>
 Utilizando-se de uma instância Linux, Attach o disco criptografado de origem como /dev/sdb e outro disco novo vazio(Mesmo tamanho) como /dev/sdc:  <br>
 <br>
 ![IMAGE02](https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/image02.png) <br>
+<br>
 ![IMAGE03](https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/image03.png) <br>
 ![IMAGE04](https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/image04.png) <br>
 <br>
