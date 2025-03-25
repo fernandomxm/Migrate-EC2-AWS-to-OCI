@@ -55,7 +55,7 @@ aws s3 ls migrateawstooci  </b> <br>
 <br>
 Migrar instâncias e volumes está sujeito às estas outras limitações: <br>
 <br>
-- Você não pode exportar uma VM se ela contiver software de terceiros fornecido pela AWS. Por exemplo, o VM Export  <b> <u> não pode exportar instâncias do Windows ou SQL Server </b> </u>, ou qualquer instância criada a partir de uma imagem no AWS Marketplace. <br>
+- Você não pode exportar uma VM se ela contiver software de terceiros fornecido pela AWS. Por exemplo, o VM Export  <p> <b> não pode exportar instâncias do Windows ou SQL Server </b> </p>, ou qualquer instância criada a partir de uma imagem no AWS Marketplace. <br>
 - Você deve exportar suas instâncias e volumes para um dos seguintes formatos de imagem que seu ambiente de virtualização suporta: <br>
 Open Virtual Appliance (OVA) <br>
 Virtual Hard Disk (VHD) <br>
