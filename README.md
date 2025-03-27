@@ -11,14 +11,17 @@ https://docs.aws.amazon.com/vm-import/latest/userguide/limits-image-export.html 
 Para evitar também o problema de não carregamento de drivers de disco de boot: <br>
 ![Erro_Boot_Windows](https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/Erro_Boot_Windows.png) <br>
 Instalar e reiniciar o servidor, antes de gerar o arquivo OVA, o pacote Oracle Windows VirtIO drivers: <br>
-![Oracle_VirtIO_Drivers](https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/Oracle_VirtIO_Drivers.png) <br> <br>
+![Oracle_VirtIO_Drivers](https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/Oracle_VirtIO_Drivers.png) <br> 
+https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/importingcustomimagewindows.htm <br><br>
 1) Retirar criptografia disco EBS:  <br>
 Utilizando-se de uma instância Linux, Attach o disco criptografado de origem como /dev/sdb e outro disco novo vazio(Mesmo tamanho) como /dev/sdc:  <br>
-<br>
+
 ![IMAGE02](https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/image02.png) <br>
+
 ![IMAGE03](https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/image03.png) <br>
+
 ![IMAGE04](https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/image04.png) <br>
-<br>
+
 2) Execute o comando dd para efetuar a cópia de um disco para o outro: <br> <br>
 <b> dd if=/dev/sdb of=/dev/sdc bs=4096 status=progress </b> <br> <br>
 Esse processo irá demorar. Monitore para até quando finalizar a cópia. <br>
