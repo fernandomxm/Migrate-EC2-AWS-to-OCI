@@ -8,6 +8,10 @@ Caso o volume <b> EBS não seja criptografado </b> , siga a partir do passo 4. <
 <br>
 https://docs.aws.amazon.com/vm-import/latest/userguide/limits-image-export.html  <br>
 <br>
+Para evitar também o problema de não carregamento de drivers de disco de boot: <br>
+![Erro_Boot_Windows](https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/Erro_Boot_Windows.png) <br>
+Instalar e reiniciar o servidor, antes de gerar o arquivo OVA, o pacote Oracle Windows VirtIO drivers: <br>
+![Oracle_VirtIO_Drivers](https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/Oracle_VirtIO_Drivers.png) <br> <br>
 1) Retirar criptografia disco EBS:  <br>
 Utilizando-se de uma instância Linux, Attach o disco criptografado de origem como /dev/sdb e outro disco novo vazio(Mesmo tamanho) como /dev/sdc:  <br>
 <br>
