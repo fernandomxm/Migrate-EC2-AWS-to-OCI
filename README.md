@@ -26,22 +26,22 @@ Utilizando-se de uma instância Linux, Attach o disco criptografado de origem co
 <b> dd if=/dev/sdb of=/dev/sdc bs=4096 status=progress </b> <br> <br>
 Esse processo irá demorar. Monitore para até quando finalizar a cópia. <br>
 Finalizada a cópia teremos o seguinte resultado, com o disco sem criptografia: <br>
-<br>
+
 ![IMAGE05](https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/image05.png) <br>
-<br>
+
 3) Criar instância com mesmo SO de origem e Attach disco sem criptografia. <br>
 <br>
 4) Criar Bucket para geração de arquivo OVA <br>
-<br>
+
 ![IMAGE06](https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/image06.png)  <br>
-<br>
+
 https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport-prerequisites.html <br>
 <br>
 5) Exportar instancia para Bucket <br> <br>
 <b> aws ec2 create-instance-export-task --instance-id i-06d09e04614 --description "Export-To-OCI" --target-environment vmware --export-to-s3-task DiskImageFormat=vmdk,ContainerFormat=ova,S3Bucket=migrateawstooci,S3Prefix=vms/  </b> <br>
-<br>
+
 ![IMAGE07](https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/image07.png) <br>
-<br>
+
 <b> aws ec2 describe-export-tasks --export-task-ids export-i-223be915b76e7t <br>
 aws s3 ls migrateawstooci  </b> <br>
 <br>
