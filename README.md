@@ -61,7 +61,7 @@ aws s3 ls migrateawstooci  </b> <br>
 10) Criar instancia a partir da imagem criada <br>
 ![IMAGE10](https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/image10.png) <br>
 <br>
-Migrar instâncias e volumes está sujeito às estas outras limitações: <br>
+Migrar instâncias e volumes está sujeito a estas limitações: <br>
 <br>
 - Você não pode exportar uma VM se ela contiver software de terceiros fornecido pela AWS. Por exemplo, o <u><strong> VM Export não pode exportar instâncias do Windows ou SQL Server </strong></u>, ou qualquer instância criada a partir de uma imagem no AWS Marketplace. <br>
 - Você deve exportar suas instâncias e volumes para um dos seguintes formatos de imagem que seu ambiente de virtualização suporta: <br>
