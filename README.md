@@ -49,7 +49,7 @@ aws s3 ls migrateawstooci  </b> <br>
 6) Copiar arquivo OVA gerado no Bucket para uma pasta local: <br> <br>
 <b> aws s3 cp s3://migrateawstooci/instance.ova /mnt/dados  </b> <br>
 <br>
-7) Converter OVA para VMDK <br>
+7) Extrair o arquivo VMDK do arquivo OVA <br>
 ![IMAGE08](https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/image08.png) <br>
 <br>
 8) Realizar cópia do arquivo VMDK para OCI <br> <br>
