@@ -43,6 +43,7 @@ https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport-prerequisites.ht
 ![IMAGE07](https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/image07.png) <br>
 
 <b> aws ec2 describe-export-tasks --export-task-ids export-i-223be915b76e7t <br>
+![create_ova](https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/Create_OVA.png) <br>
 aws s3 ls migrateawstooci  </b> <br>
 <br>
 6) Copiar arquivo OVA gerado no Bucket para uma pasta local: <br> <br>
