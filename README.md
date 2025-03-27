@@ -37,7 +37,7 @@ Finalizada a cópia teremos o seguinte resultado, com o disco sem criptografia: 
 
 https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport-prerequisites.html <br>
 <br>
-5) Exportar instancia para Bucket <br> <br>
+5) Exportar instancia para Bucket AWS <br> <br>
 <b> aws ec2 create-instance-export-task --instance-id i-06d09e04614 --description "Export-To-OCI" --target-environment vmware --export-to-s3-task DiskImageFormat=vmdk,ContainerFormat=ova,S3Bucket=migrateawstooci,S3Prefix=vms/  </b> <br>
 
 ![IMAGE07](https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/image07.png) <br>
