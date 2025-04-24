@@ -12,7 +12,8 @@ Para evitar também o problema de não carregamento de drivers de disco de boot:
 ![Erro_Boot_Windows](https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/Erro_Boot_Windows.png) <br>
 Instalar e reiniciar o servidor, antes de gerar o arquivo OVA, o pacote Oracle Windows VirtIO drivers: <br>
 ![Oracle_VirtIO_Drivers](https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/Oracle_VirtIO_Drivers.png) <br> 
-https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/importingcustomimagewindows.htm <br><br>
+https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/importingcustomimagewindows.htm <br>
+https://docs.oracle.com/en/operating-systems/oracle-linux/kvm-virtio/kvm-virtio-DownloadingtheOracleVirtIODriversforMicrosoftWindows.html <br> <br>
 1) Retirar criptografia disco EBS:  <br>
 Utilizando-se de uma instância Linux, Attach o disco criptografado de origem como /dev/sdb e outro disco novo vazio(Mesmo tamanho) como /dev/sdc:  <br>
 
