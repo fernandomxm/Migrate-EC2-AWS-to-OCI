@@ -39,9 +39,17 @@ https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport-prerequisites.ht
 <br>
 5) Exportar instancia para Bucket AWS <br> <br>
 <b> aws ec2 create-instance-export-task --instance-id i-06d09e04614 --description "Export-To-OCI" --target-environment vmware --export-to-s3-task DiskImageFormat=vmdk,ContainerFormat=ova,S3Bucket=migrateawstooci,S3Prefix=vms/  </b> <br>
-
+<br>
+Opcionalmente pode ser utilizado esse comando: <br>
+aws ec2 export-image --image-id ami-016e07 --disk-image-format VMDK --s3-export-location S3Bucket=migrateawstooci <br>
+<br>
 ![IMAGE07](https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/image07.png) <br>
-
+<br>
+Caso tenha problemas com licenciamento de terceiros, o disco pode ser atachado em um linux e executados os comandos abaixo: <br>
+dd if=/dev/xvdb1 of=~/ec2-disk.img bs=1M <br>
+qemu-img convert -f raw ec2-disk.img -O vmdk ec2-disk.vmdk <br>
+Pular para passo 8 <br>
+<br>
 <b> aws ec2 describe-export-tasks --export-task-ids export-i-223be915b76e7t <br>
 ![create_ova](https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/Create_OVA.png) <br>
 aws s3 ls migrateawstooci  </b> <br>
