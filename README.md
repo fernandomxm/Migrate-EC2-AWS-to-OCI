@@ -46,7 +46,7 @@ aws ec2 export-image --image-id ami-016e07 --disk-image-format VMDK --s3-export-
 <br>
 ![IMAGE07](https://github.com/fernandomxm/Migrate-EC2-AWS-to-OCI/blob/main/image07.png) <br>
 <br>
-Caso tenha problemas com licenciamento de terceiros, o disco pode ser atachado em um linux e executados os comandos abaixo: <br>
+Caso tenha algum erro relacionado a AMI, o disco pode ser atachado em um linux e executados os comandos abaixo: <br>
 dd if=/dev/xvdb1 of=~/ec2-disk.img bs=1M <br>
 qemu-img convert -f raw ec2-disk.img -O vmdk ec2-disk.vmdk <br>
 Pular para passo 8 <br>
